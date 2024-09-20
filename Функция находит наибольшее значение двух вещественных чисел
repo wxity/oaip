@@ -1,0 +1,16 @@
+using namespace std;
+
+float max(float x, float y); // Объявление функции max
+
+int main() // Главная функция
+{
+    float a = 5.5, b = 3.2, c = 14.1, d;
+    d = max(max(a, b), c); // Нахождение максимального из трёх чисел
+    cout << "max = " << d << endl;
+    return 0;
+}
+
+float max(float x, float y) // Определение функции max
+{
+    return (x > y) ? x : y; // Возврат максимального значения
+}
